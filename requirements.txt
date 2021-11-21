@@ -1,0 +1,5 @@
+celery
+pydantic
+requests
+python-dotenv
+sendgrid
