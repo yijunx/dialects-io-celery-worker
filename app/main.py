@@ -19,3 +19,17 @@ def update_user_info(
 ):
     print("updating use info")
     pass
+
+
+if __name__ == "__main__":
+    app.worker_main(
+        argv=[
+            "worker",
+            f"--autoscale={conf.WORKER_MAX},{1}",
+            f"--loglevel=info",
+            "--queues",
+            conf.QUEUE,
+
+
+        ]
+    )
