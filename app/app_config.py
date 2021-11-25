@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     SERVICE_NAME: str
     SERVICE_VERSION: str
     DOMAIN_NAME: str
-    
+
     BROKER: str
     QUEUE: str
     WORKER_MAX: str
