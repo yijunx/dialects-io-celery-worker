@@ -33,7 +33,7 @@ def send_email_verification(token: str, user_email: str, user_name: str):
         raise e
 
 
-def password_reset(token: str, user_name: str, user_email: str, login_method: str):
+def send_password_reset(token: str, user_name: str, user_email: str, login_method: str):
     """
     sending email for password reset"""
 
@@ -57,7 +57,7 @@ def password_reset(token: str, user_name: str, user_email: str, login_method: st
     message = Mail(
         from_email="dialects.io@gmail.com",
         to_emails=user_email,
-        subject="email verification",
+        subject="password reset email",
         html_content=content,
     )
     try:
